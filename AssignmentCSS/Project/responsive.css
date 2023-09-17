@@ -1,0 +1,120 @@
+@media screen and (max-width:990px) {
+    nav {
+        width: 100%;
+        display: block;
+
+    }
+
+    nav img {
+        width: 90px;
+    }
+
+    .banner h3 {
+        font-size: 50px;
+    }
+
+    .nav-link {
+        position: absolute;
+        background-color: antiquewhite;
+        height: 120vh;       
+        top: 0px;
+        right: -200px;      
+        text-align: left;
+        z-index: 1;
+    }
+
+    nav .fa {
+        display: block;
+        color: #000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;     
+    }
+
+    .nav-link ul {
+        padding: 30px;
+    }
+
+    .nav-link ul li {
+        display: block;
+    }
+
+
+    .number {
+        width: 111px;
+        padding: 12px 0;
+        font-size: 12px;
+    }
+
+    .number p {
+        padding: 0;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    /* Where to go  */
+    @media screen and (max-width:990px) {
+        .container {
+            display: block;
+            width: 100%;
+        }
+
+        .container input {
+            width: 70%;
+        }
+
+        .content p {
+            font-size: 20px;
+        }
+
+        .inputfield input,
+        .date input {
+            font-size: 16px;
+        }
+        .btn button{
+            font-size: 16px;
+            padding: 7px 15px;
+        }
+
+        .sele {
+            width: 70%;
+            font-size: 16px;
+        }
+
+
+    }
+}
+
+/* Popular section  */
+@media screen and (max-width:990px) {
+    .img {
+        width: 100%;
+    }
+
+    .img p {
+        right: 180px;
+    }
+
+    .popular-img {
+        display: block;
+    }
+
+}
+
+/* News section */
+@media screen and (max-width:990px) {
+    .news {
+        display: block;
+        width: 100%;
+    }
+
+    .news-text input {
+        width: 90%;
+    }
+
+    .news-text button {
+        width: 90%;
+    }
+}
