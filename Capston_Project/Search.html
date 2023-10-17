@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+    <link rel="stylesheet" href="search.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- rgba(209, 207, 207, 0.438) -->
+<body>
+     
+    <div class="wrapper">
+        <!-- <i class="fa fa-light fa-circle-chevron-down"></i>
+            <i class="fa fa-light fa-toggle-off"></i> -->
+        <div class="navsearch">
+            <nav>
+                <div class="logo"><i class="fa fa-plane fa-rotate-by" style="--fa-rotate-angle:-45deg"
+                        aria-hidden="ture"></i>
+                    <span>my Dream Place</span>
+                </div>
+                <div class="navlink">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-img">
+                    <i class="fa fa-bell"></i>
+                    <p class="bell-dot"></p>
+                    <img src="image-2/01.jpg" width="50px" height="50px" alt="">
+                </div>
+            </nav>
+        </div>
+
+        <div class="icons">
+            <button class="icon-btn"> <i class="fa fa-map-marker-alt"></i>Melbourne</button>
+            <button class="icon-btn"> <i class="fa-solid fa-calendar-days"></i>March 18, 2022</button>
+            <button class="icon-btn"> <i class="fa-solid fa-calendar-days"></i>March 20, 2022</button>
+            <button class="icon-btn"> <i class="fa fa-user" aria-hidden="true"></i>2 adult, 1 room</button>
+            <button class="icon-btn search-btn">Search</button>
+        </div>
+    </div>
+    <!-- rgba(212, 208, 208, 0.479) -->
+    <section>
+        <div class="main-page-search">
+            <div class="sidebar">
+                <div class="side-first">
+                    <h2> Search by property</h2>
+                    <p><i class="fa fa-search"></i> eg. Beach westpalm</p>
+                </div>
+                <h1>Filter by</h1>
+
+                <div class="side-fourth">
+                    <h2>Your budget per day</h2>
+
+                    <div class="finaly">
+                        <div class="one">
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>$ 0 - $ 200</div>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>$ 200 - $ 500</div>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>$ 500 - $ 1,000</div>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>$ 1,000 - $ 2,000</div>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>$ 2,000 - $ 5,000</div>
+                            </div>
+                            <div class="list">
+                               <p style="margin: 5px 0 10px 0;"> Set your own budget</p>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <div>200</div>
+                            <div>100</div>
+                            <div>15</div>
+                            <div>12</div>
+                            <div>230</div>
+                            <div><i class="fa fa-light fa-toggle-off"></i></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="side-third">
+                    <h2>Rating</h2>
+                    <p> Show only ratings more than </p>
+                    <ul>
+                        <li>1<i class="fa fa-sharp fa-solid fa-star"></i></li>
+                        <li>2<i class="fa fa-sharp fa-solid fa-star"></i></li>
+                        <li>3<i class="fa fa-sharp fa-solid fa-star"></i></li>
+                        <li>4<i class="fa fa-sharp fa-solid fa-star"></i></li>
+                        <li>5<i class="fa fa-sharp fa-solid fa-star"></i></li>
+                    </ul>
+                </div>
+                <div class="side-fourth">
+                    <h2>Popular Filters</h2>
+
+                    <div class="finaly">
+                        <div class="one">
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>Free cancellation</div>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>spa</div>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>Beach front</div>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>Hot tub/jacuzzi</div>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>Book without credit card</div>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>No prepayment</div>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <div>200</div>
+                            <div>100</div>
+                            <div>15</div>
+                            <div>12</div>
+                            <div>230</div>
+                            <div>12</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="side-fourth">
+                    <h2>Activities</h2>
+
+                    <div class="finaly">
+                        <div class="one">
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>Fishing</div>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>Hiking</div>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>Beach</div>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>Cycling</div>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>Sauna</div>
+                            </div>
+                            <div class="list">
+                                <input type="checkbox"> &nbsp;
+                                <div>Night lights</div>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <div>200</div>
+                            <div>100</div>
+                            <div>15</div>
+                            <div>12</div>
+                            <div>230</div>
+                            <div>12</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mainpage">
+                <h3> Melbourne: 2,582 seacrch results found</h3>
+                <div class="row">
+                    <div class="row1">
+                        <p>Our top picks</p>
+                        <p>Hotel and apartments</p>
+                        <p>Residence</p>
+                        <p>Resort</p>
+                        <p>Shared Space</p>
+                    </div>
+                    <div class="row2">
+                        <p>Sort by <br /><Span>Recommended</Span> <i class="fa fa-light fa-circle-chevron-down"></i>
+                        </p>
+                    </div>
+                </div>
+                <!-- image-2 blog start -->
+                <div class="blog-section">
+                    <div class="blog">
+                        <div class="blog-img">
+                            <img src="image-2/images (5).jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h2>Lakeside Motel Warefront </h2>
+                            <p><i class="fa fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star-half fa-star"></i> 4.5(1200 Reviews)
+                            </p>
+                            <p> Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late <br /> checkout. Gym
+                                included. Flexible cancellation applies </p>
+                            <button class="blog-btn"> See availability</button>
+                        </div>
+                        <div class="blog-content-last">
+                            <ul>
+                                <li>Book now and receive 15% off</li>
+                                <li>5% off &nbsp;</li>
+                                <li>1 room 2 days</li>
+                                <li><span style="color: rgb(236, 74, 74);"><del>$150</del></span> $130</li>
+                                <li>includes tazes and fees</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-img">
+                            <img src="image-2/images (2).jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h2>Julia Dens Resort </h2>
+                            <p><i class="fa fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star-half fa-star"></i> 4.5(1200 Reviews)
+                            </p>
+                            <p> Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late <br /> checkout. Gym
+                                included. Flexible cancellation applies </p>
+                            <button class="blog-btn"> See availability</button>
+                        </div>
+                        <div class="blog-content-last-extra">
+                            <ul>
+                                <!-- <li style="display: none; "></li>                                                              -->
+                                <li></li>
+                                <li>1 room 2 days</li>
+                                <li>$240</li>
+                                <li>includes tazes and fees</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-img">
+                            <img src="image-2/images (3).jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h2>Aghnim Scepter Hotel </h2>
+                            <p><i class="fa fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star-half fa-star"></i> 4.5(1200 Reviews)
+                            </p>
+                            <p> Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late <br /> checkout. Gym
+                                included. Flexible cancellation applies </p>
+                            <button class="blog-btn"> See availability</button>
+                        </div>
+                        <div class="blog-content-last">
+                            <ul>
+                                <li style="background-color: rgb(255, 145, 0);">Book now and receive 15% off</li>
+                                <li>5% off &nbsp;</li>
+                                <li>1 room 2 days</li>
+                                <li> $300</li>
+                                <li>includes tazes and fees</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-img">
+                            <img src="image-2/images (5).jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h2>Marineford Hotel </h2>
+                            <p><i class="fa fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star-half fa-star"></i> 4.5(1200 Reviews)
+                            </p>
+                            <p> Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late <br /> checkout. Gym
+                                included. Flexible cancellation applies </p>
+                            <button class="blog-btn"> See availability</button>
+                        </div>
+                        <div class="blog-content-last-extra">
+                            <ul>
+
+                                <li>1 room 2 days</li>
+                                <li> $120</li>
+                                <li>includes tazes and fees</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-img">
+                            <img src="image-2/images (5).jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h2>Shanghai Open House </h2>
+                            <p><i class="fa fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star-half fa-star"></i> 4.5(1200 Reviews)
+                            </p>
+                            <p> Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late <br /> checkout. Gym
+                                included. Flexible cancellation applies </p>
+                            <button class="blog-btn"> See availability</button>
+                        </div>
+                        <div class="blog-content-last-extra">
+                            <ul>
+                                <li>1 room 2 days</li>
+                                <li> $145</li>
+                                <li>includes tazes and fees</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-img">
+                            <img src="image-2/images (3).jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h2>Ocean Waves Resort</h2>
+                            <p><i class="fa fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star-half fa-star"></i> 4.5(1200 Reviews)
+                            </p>
+                            <p> Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late <br /> checkout. Gym
+                                included. Flexible cancellation applies </p>
+                            <button class="blog-btn"> See availability</button>
+                        </div>
+                        <div class="blog-content-last-extra">
+                            <ul>
+
+                                <li>1 room 2 days</li>
+                                <li>$310</li>
+                                <li>includes tazes and fees</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-img">
+                            <img src="image-2/images (2).jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h2>Maimi City frontier </h2>
+                            <p><i class="fa fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star-half fa-star"></i> 4.5(1200 Reviews)
+                            </p>
+                            <p> Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late <br /> checkout. Gym
+                                included. Flexible cancellation applies </p>
+                            <button class="blog-btn"> See availability</button>
+                        </div>
+                        <div class="blog-content-last">
+                            <ul>
+                                <li style="background-color: rgb(250, 147, 11);">Book now and receive 15% off</li>
+                                <li>5% off &nbsp;</li>
+                                <li>1 room 2 days</li>
+                                <li><span style="color: rgb(236, 74, 74);"><del>$200</del></span> $190</li>
+                                <li>includes tazes and fees</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog-img">
+                            <img src="image-2/images (5).jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h2>Lakeside Motel Warefront </h2>
+                            <p><i class="fa fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa  fa-sharp fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star"></i>
+                                <i class="fa fa-sharp  fa-solid fa-star-half fa-star"></i> 4.5(1200 Reviews)
+                            </p>
+                            <p> Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late <br /> checkout. Gym
+                                included. Flexible cancellation applies </p>
+                            <button class="blog-btn"> See availability</button>
+                        </div>
+                        <div class="blog-content-last-last">
+                            <ul>
+                                <li>5% off &nbsp;</li>
+                                <li>1 room 2 days</li>
+                                <li><span style="color: rgb(236, 74, 74);"><del>$320</del></span> $300</li>
+                                <li>includes tazes and fees</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="warning">
+        <p><i class="fa fa-light fa-exclamation-triangle"></i> Check the latest COVID-19 restrictions before you
+            travel. <a href="#">Learn more</a></p>
+    </div>
+    <section>
+        <div class="footer">
+            <div class="one">
+                <h2> </h2>
+                <ul>
+                    <li><i class="fa fa-plane fa-rotate-by" style="--fa-rotate-angle:-45deg"
+                            aria-hidden="ture"></i>&nbsp; <a href="#"> my Dream Place</a></li>
+                    <li><a class="move-one-step" href="#"> Your next goto companion for travel</a></li>
+                </ul>
+            </div>
+            <div class="tow">
+                <h2>Company</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="three">
+                <h2>Explore</h2>
+                <ul>
+                    <li><a href="#">Australia</a></li>
+                    <li><a href="#">New Zealand</a></li>
+                    <li><a href="#">United States Amirica [USA]</a></li>
+                    <li><a href="#">Greece</a></li>
+                    <li><a href="#">Maldives</a></li>
+                    <li><a href="#">Singapore</a></li>
+                    <li><a href="#">See more</a></li>
+                </ul>
+            </div>
+            <div class="fourth">
+                <h2>Terms and Policies</h2>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Acessibility</a></li>
+                    <li><a href="#">Reward system policy</a></li>
+                </ul>
+            </div>
+            <div class="five">
+                <h2>Help</h2>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Cancel your booking</a></li>
+                    <li><a href="#">Use Coupon</a></li>
+                    <li><a href="#">Refund Policies</a></li>
+                    <li><a href="#">International Travel Documents</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
